@@ -159,8 +159,8 @@ Return ONLY valid JSON (no markdown, no text outside JSON):
       "category": "Technical|Behavioral|Situational|HR",
       "difficulty": "Easy|Medium|Hard",
       "question": "question text here",
-      "idealAnswer": "detailed ideal answer here (3-5 sentences)",
-      "tip": "quick tip for answering this question"
+      "idealAnswer": "concise answer here (1-2 sentences max)",
+      "tip": "short tip"
     }
   ]
 }
