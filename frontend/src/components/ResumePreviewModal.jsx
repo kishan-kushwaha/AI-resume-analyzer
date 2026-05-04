@@ -9,7 +9,8 @@ export default function ResumePreviewModal({ resume, onClose }) {
   const [error, setError] = useState(false);
 
   // Build URL — uses auth token as query param for the iframe
-  const previewUrl = `http://localhost:5000/api/resume/file/${resume.id}?token=${token}`;
+  const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+  const previewUrl = `${baseUrl}/resume/file/${resume.id}?token=${token}`;
   const isPdf = resume.mime_type === 'application/pdf' || resume.original_name?.endsWith('.pdf');
 
   return (
@@ -55,7 +56,7 @@ export default function ResumePreviewModal({ resume, onClose }) {
             </div>
             <div style={{ display: 'flex', gap: 8 }}>
               <a
-                href={`http://localhost:5000/api/resume/file/${resume.id}?token=${token}&download=1`}
+                href={`${baseUrl}/resume/file/${resume.id}?token=${token}&download=1`}
                 target="_blank" rel="noopener noreferrer"
                 className="btn btn-secondary btn-sm"
                 style={{ textDecoration: 'none' }}
