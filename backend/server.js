@@ -19,7 +19,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Security middleware
-app.use(helmet());
+app.use(helmet({
+  crossOriginResourcePolicy: false,
+  frameguard: false,
+  contentSecurityPolicy: false,
+}));
 app.use(cors({
   origin: function (origin, callback) {
     // Allow any localhost origin in development
