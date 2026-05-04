@@ -208,14 +208,14 @@ export default function ReportPage() {
                   <h3 style={{ fontSize: 15, fontFamily: 'Outfit, sans-serif' }}>Recommended Courses to Boost Your ATS Score</h3>
                 </div>
                 <div className="grid-2" style={{ gap: 16 }}>
-                  <a href="https://www.udemy.com/" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', background: 'rgba(255,255,255,0.03)', padding: 16, borderRadius: 12, border: '1px solid var(--border-color)', display: 'block', transition: 'all 0.2s' }}>
-                    <div style={{ fontSize: 14, fontWeight: 600, color: '#fff', marginBottom: 6 }}>Master React & Next.js 🚀</div>
-                    <div style={{ fontSize: 12, color: 'var(--text-secondary)', marginBottom: 12 }}>Learn the most demanded frontend skills and get hired faster.</div>
+                  <a href="https://www.apnacollege.in/" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', background: 'rgba(255,255,255,0.03)', padding: 16, borderRadius: 12, border: '1px solid var(--border-color)', display: 'block', transition: 'all 0.2s' }}>
+                    <div style={{ fontSize: 14, fontWeight: 600, color: '#fff', marginBottom: 6 }}>Alpha Batch: Web Dev (Hinglish) 🚀</div>
+                    <div style={{ fontSize: 12, color: 'var(--text-secondary)', marginBottom: 12 }}>Apna College: Learn the most demanded frontend skills in Hinglish and get hired faster.</div>
                     <span className="btn btn-primary btn-sm" style={{ padding: '6px 12px', fontSize: 12 }}>Enroll Now</span>
                   </a>
-                  <a href="https://www.coursera.org/" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', background: 'rgba(255,255,255,0.03)', padding: 16, borderRadius: 12, border: '1px solid var(--border-color)', display: 'block', transition: 'all 0.2s' }}>
-                    <div style={{ fontSize: 14, fontWeight: 600, color: '#fff', marginBottom: 6 }}>Data Structures & Algorithms 🧠</div>
-                    <div style={{ fontSize: 12, color: 'var(--text-secondary)', marginBottom: 12 }}>Crack coding interviews at top tech companies like FAANG.</div>
+                  <a href="https://practice.geeksforgeeks.org/courses/dsa-self-paced" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', background: 'rgba(255,255,255,0.03)', padding: 16, borderRadius: 12, border: '1px solid var(--border-color)', display: 'block', transition: 'all 0.2s' }}>
+                    <div style={{ fontSize: 14, fontWeight: 600, color: '#fff', marginBottom: 6 }}>DSA Self-Paced (GeeksforGeeks) 🧠</div>
+                    <div style={{ fontSize: 12, color: 'var(--text-secondary)', marginBottom: 12 }}>Crack coding interviews at top tech companies in India like Amazon, TCS, Infosys.</div>
                     <span className="btn btn-primary btn-sm" style={{ padding: '6px 12px', fontSize: 12 }}>View Course</span>
                   </a>
                 </div>
