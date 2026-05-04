@@ -14,6 +14,7 @@ export default function AuthPage() {
   const navigate = useNavigate();
   const { setAuth } = useAuthStore();
   const [searchParams] = useSearchParams();
+  const googleAuthUrl = `${import.meta.env.VITE_API_URL || 'http://localhost:5000/api'}/auth/google`;
 
   useEffect(() => {
     const error = searchParams.get('error');
@@ -173,7 +174,7 @@ export default function AuthPage() {
           {/* Google OAuth */}
           <a
             id="google-login-btn"
-            href="http://localhost:5000/api/auth/google"
+            href={googleAuthUrl}
             style={{
               display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
               width: '100%', padding: '11px 20px', borderRadius: 12, marginTop: 16,
