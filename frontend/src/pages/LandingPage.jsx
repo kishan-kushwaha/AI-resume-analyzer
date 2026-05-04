@@ -4,7 +4,7 @@ import { Brain, Upload, BarChart3, Zap, FileText, Target, ArrowRight, CheckCircl
 import { useAuthStore } from '../store/authStore';
 
 const features = [
-  { icon: <Brain size={24} />, title: 'AI-Powered Analysis', desc: 'Gemini AI analyses every aspect of your resume — from formatting to content quality.', color: 'var(--purple-400)' },
+  { icon: <Brain size={24} />, title: 'AI-Powered Analysis', desc: 'Our AI analyses every aspect of your resume — from formatting to content quality.', color: 'var(--purple-400)' },
   { icon: <Target size={24} />, title: 'ATS Score Check', desc: 'Know exactly how well your resume will pass Applicant Tracking Systems.', color: 'var(--cyan-400)' },
   { icon: <BarChart3 size={24} />, title: 'Job Match %', desc: 'Paste any job description and get an instant match percentage with missing skills.', color: 'var(--emerald-400)' },
   { icon: <Zap size={24} />, title: 'Better Bullet Points', desc: 'AI rewrites your weak bullet points with stronger verbs and quantifiable impact.', color: 'var(--amber-400)' },
@@ -39,7 +39,7 @@ export default function LandingPage() {
             ) : (
               <>
                 <Link to="/auth" className="nav-link">Login</Link>
-                <Link to="/auth" className="btn btn-primary btn-sm">Get Started Free</Link>
+                <Link to="/auth" className="btn btn-primary btn-sm">Create Account</Link>
               </>
             )}
           </div>
@@ -59,7 +59,7 @@ export default function LandingPage() {
             transition={{ duration: 0.6 }}
           >
             <div className="badge badge-purple" style={{ display: 'inline-flex', marginBottom: 24, fontSize: 13, padding: '6px 16px' }}>
-              <Zap size={14} /> Powered by Google Gemini AI
+              <Zap size={14} /> Powered by AI
             </div>
 
             <h1 style={{ fontSize: 'clamp(40px, 7vw, 72px)', fontWeight: 900, lineHeight: 1.1, marginBottom: 24, fontFamily: 'Outfit, sans-serif' }}>
@@ -224,7 +224,7 @@ export default function LandingPage() {
             <Brain size={20} color="var(--purple-400)" />
             <span className="brand-gradient">ResumeAI</span>
           </div>
-          <p style={{ color: 'var(--text-muted)', fontSize: 13 }}>Built with ❤️ using Google Gemini AI · © 2025</p>
+          <p style={{ color: 'var(--text-muted)', fontSize: 13 }}>Built with ❤️ using AI · © 2025</p>
         </div>
       </footer>
     </div>

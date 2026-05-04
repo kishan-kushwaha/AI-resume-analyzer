@@ -142,7 +142,7 @@ export default function AnalysisPage() {
               </div>
               <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 12, fontFamily: 'Outfit, sans-serif' }}>Ready to Analyse!</h2>
               <p style={{ color: 'var(--text-secondary)', maxWidth: 440, margin: '0 auto 32px', lineHeight: 1.7 }}>
-                Gemini AI will analyse your resume and give you ATS score, quality score, missing skills, and actionable suggestions.
+                AI will analyse your resume and give you ATS score, quality score, missing skills, and actionable suggestions.
               </p>
               <button id="run-analysis-btn" onClick={runAnalysis} disabled={analysing} className="btn btn-primary btn-lg">
                 {analysing ? <><div className="spinner" />Analysing...</> : <><Brain size={20} />Analyse My Resume<ArrowUpRight size={18} /></>}
