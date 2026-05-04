@@ -38,7 +38,7 @@ const callGroq = async (prompt) => {
  * Analyse resume only (no JD)
  */
 const analyseResume = async (resumeText) => {
-  const prompt = `Analyse the following resume and return a detailed JSON analysis.
+  const prompt = `CRITICALLY analyse the following resume. You MUST provide a unique and realistic evaluation based strictly on the content provided. Do NOT use generic default scores like 85 or 92. Calculate penalties for missing skills, weak action verbs, or lack of measurable impact.
 
 RESUME:
 """
@@ -47,8 +47,8 @@ ${resumeText.substring(0, 8000)}
 
 Return ONLY valid JSON with this exact structure (no markdown, no text before or after):
 {
-  "atsScore": <integer 0-100, ATS compatibility>,
-  "resumeScore": <integer 0-100, overall quality>,
+  "atsScore": <integer 0-100, calculate realistically based on formatting and keyword richness>,
+  "resumeScore": <integer 0-100, calculate realistically based on impact, metrics, and clarity>,
   "matchedSkills": ["skill1", "skill2", "skill3"],
   "missingSkills": ["skill1", "skill2", "skill3"],
   "strengths": ["strength1", "strength2", "strength3"],
