@@ -140,7 +140,7 @@ const parseJsonResponse = (text) => {
  * Generate interview Q&A based on resume + optional JD
  */
 const generateInterviewQA = async (resumeText, jobDescription = '', jobTitle = '') => {
-  const prompt = `You are an expert technical interviewer. Based on the resume and job description below, generate 70 highly relevant interview questions with ideal answers.
+  const prompt = `You are an expert technical interviewer. Based on the resume and job description below, generate 20 highly relevant interview questions with ideal answers.
 
 JOB TITLE: ${jobTitle || 'General'}
 
@@ -159,13 +159,13 @@ Return ONLY valid JSON (no markdown, no text outside JSON):
       "category": "Technical|Behavioral|Situational|HR",
       "difficulty": "Easy|Medium|Hard",
       "question": "question text here",
-      "idealAnswer": "concise answer here (1-2 sentences max)",
-      "tip": "short tip"
+      "idealAnswer": "detailed ideal answer here (3-5 sentences)",
+      "tip": "quick tip for answering this question"
     }
   ]
 }
 
-Include a mix: 30 Technical, 20 Behavioral, 10 Situational, 10 HR questions.`;
+Include a mix: 8 Technical, 6 Behavioral, 4 Situational, 2 HR questions.`;
 
   try {
     const text = await callGroq(prompt);
